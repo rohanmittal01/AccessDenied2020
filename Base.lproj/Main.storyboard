@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="timelineViewController" customModule="AccessDenied" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zYz-UA-XwU">
-                                <rect key="frame" x="3" y="50" width="369" height="548"/>
+                                <rect key="frame" x="3" y="94" width="369" height="524"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="104" id="6cf-yl-lZg" customClass="timelineTableViewCell" customModule="AccessDenied" customModuleProvider="target">
@@ -69,7 +69,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWm-Qc-igv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g1-oB-pWc">
                                         <rect key="frame" x="73" y="5" width="40" height="40"/>
@@ -278,7 +278,7 @@
             </objects>
             <point key="canvasLocation" x="1853.6231884057972" y="-604.01785714285711"/>
         </scene>
-        <!--Contact View Controller-->
+        <!--Contact Us-->
         <scene sceneID="S5R-HX-TmZ">
             <objects>
                 <viewController id="nbe-uu-tg7" customClass="contactViewController" customModule="AccessDenied" customModuleProvider="target" sceneMemberID="viewController">
@@ -286,7 +286,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-hK-TzM">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-hK-TzM">
                                 <rect key="frame" x="0.0" y="144" width="375" height="464"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="T09-pT-MMN">
@@ -445,25 +445,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2GM-rh-qfL"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cuc-KT-dHV"/>
+                    <navigationItem key="navigationItem" title="Contact Us" id="cuc-KT-dHV"/>
                     <connections>
                         <outlet property="websiteButton" destination="RTy-sd-nrn" id="6gy-ob-KzL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VnI-Xe-4tj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2556.521739130435" y="-1329.2410714285713"/>
+            <point key="canvasLocation" x="3495.1999999999998" y="-1329.9850074962519"/>
         </scene>
         <!--Livechat View Controller-->
         <scene sceneID="8fC-nW-Kng">
             <objects>
                 <viewController id="F0q-Xv-T1h" customClass="livechatViewController" customModule="AccessDenied" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fpv-pU-Wei">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmr-BO-Q84">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -498,7 +498,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-KT-IW2">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-KT-IW2">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="HBe-7g-jAR">
@@ -786,7 +786,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="settingsTable" destination="2m5-hy-27I" id="pKP-0W-4LY"/>
-                        <segue destination="iFm-Hh-Hh7" kind="show" identifier="about_iete" id="9it-tl-2jj"/>
+                        <segue destination="t4G-7q-cwd" kind="showDetail" identifier="about_iete" id="9it-tl-2jj"/>
                         <segue destination="Vj7-GU-fF1" kind="show" identifier="developer_info" id="CLx-c6-z5F"/>
                         <segue destination="nbe-uu-tg7" kind="show" identifier="Contact_Us" id="R6Z-a0-WjV"/>
                         <segue destination="arq-M5-KQW" kind="show" identifier="faq1" id="kS3-F8-Rb7"/>
@@ -796,7 +796,7 @@
             </objects>
             <point key="canvasLocation" x="606" y="-552"/>
         </scene>
-        <!--ABOUT IETE-->
+        <!--About IETE-->
         <scene sceneID="eeX-kQ-dtU">
             <objects>
                 <viewController id="iFm-Hh-Hh7" customClass="aboutViewController" customModule="AccessDenied" customModuleProvider="target" sceneMemberID="viewController">
@@ -831,7 +831,7 @@
                                                         </constraints>
                                                         <string key="text">VIT University or VIT, formerly called Vellore Engineering College, is an Indian institute of higher education and a deemed university under Section 3 of the UGC Act. Founded in 1984, as Vellore Engineering College, by G. Viswanathan, the institution offers 20 undergraduate, 34 postgraduate, four integrated and four research programs. It has campuses in Vellore and Chennai, Tamil Nadu, India. Foundation stone for VIT Bhopal campus at Sehore, Madhya Pradesh was laid down by Mr. Shivraj Singh Chauhan (Chief Minister of Madhya Pradesh) on 20 October 2016.VIT has been ranked No. 1 private university and 13th overall best university ahead of many IITs and NITs in India, by National Institutional Ranking Framework published by Ministry of Human Resource Development, Government of India in April 2016. It has been ranked 4th best engineering college in India by the renowned IndiaToday Nielsen Survey 2016. It has been constantly ranked in the Top 10 Engineering colleges in India for the past several years by renowned rankings which include India Today Group, The Week, Hindustan Times, Career 360 and many more.</string>
                                                         <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ietelogo" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-bc-8XG">
@@ -851,7 +851,7 @@
                                                         </constraints>
                                                         <string key="text">The Institution of Electronics and Telecommunication Engineers (IETE) is India's leading recognized professional society devoted to the advancement of Science and Technology of Electronics, Telecommunication and IT. The Institution provides leadership in Scientific and Technical areas of direct importance to the national development and economy. Government of India has recognized IETE as a Scientific and Industrial Research Organization (SIRO) and also notified as an educational Institution of national eminence. The objectives of IETE focus on advancing electro-technology. The IETE conducts and partners technical meetings, conferences, symposia, and exhibitions all over India, publishes technical journals and provides continuing education as well as career advancement opportunities to its members.</string>
                                                         <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="synergylogoaboutus" translatesAutoresizingMaskIntoConstraints="NO" id="cFp-3T-7y2">
@@ -871,7 +871,7 @@
                                                         </constraints>
                                                         <string key="text">Synergy 2020 is an International Technical Symposium organized by Institution of Electronics and Telecommunication Engineers (IETE-ISF) in association with School of Electronics and Telecommunication Engineering - VIT University, Vellore. Symposium offers a one-of-a-kind experience to students by providing an array of opportunities under one umbrella. The idea behind Synergy'19 is to train students in future forward technologies through workshops and provide global exposure and esoteric knowledge through guest lectures delivered by eminent personalities.Synergy'20 looks forward to promote; ”Envisioning the Future”, which not only embraces one's desire to become better, but also enables one to be able to explain the myriad of emotions a person experiences on the path to success and spread the word.</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -935,7 +935,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CfT-vv-yAO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ABOUT IETE" id="sOR-mX-ppZ"/>
+                    <navigationItem key="navigationItem" title="About IETE" id="sOR-mX-ppZ"/>
                     <size key="freeformSize" width="414" height="1890"/>
                     <connections>
                         <outlet property="text1" destination="bXT-Vm-zFp" id="nkC-kt-PWY"/>
@@ -945,7 +945,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hup-Gi-3MS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637" y="-1928"/>
+            <point key="canvasLocation" x="2244.8000000000002" y="-1925.0374812593705"/>
         </scene>
         <!--FAQ-->
         <scene sceneID="xIr-rh-MWr">
@@ -1159,6 +1159,28 @@
             </objects>
             <point key="canvasLocation" x="-52" y="811"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gaC-oC-Tpq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t4G-7q-cwd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k2k-T1-e0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.26094814620000001" green="0.26353179119999998" blue="0.26353179119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iFm-Hh-Hh7" kind="relationship" relationship="rootViewController" id="z5I-SW-Heq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxe-4v-bV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306.4000000000001" y="-1925.4872563718143"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Hack white logo" width="645" height="808"/>
@@ -1184,7 +1206,7 @@
         <image name="zebronics" width="83" height="83"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vfy-JY-Dlv"/>
+        <segue reference="VMf-MH-6KC"/>
         <segue reference="4yN-7j-JbP"/>
     </inferredMetricsTieBreakers>
 </document>

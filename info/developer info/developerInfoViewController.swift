@@ -17,7 +17,7 @@ class developerInfoViewController: UIViewController, UICollectionViewDataSource,
     let developerImageArray = [UIImage(named: "Rohan"), UIImage(named: "Manan")]
     let developerNameArray = ["Rohan Mittal", "Manan Agrawal"]
     let developerTypeArray = ["iOS App Developer", "Android App Developer"]
-    let developerNumberArray = ["+918754583601","+918800647617"]
+    let developerNumberArray = ["+91-8754583601","+91-8800647617"]
     let developerMailArray = ["rohanmittal01@gmail.com","redmanan@gmail.com"]
     
 

@@ -10,7 +10,7 @@ import UIKit
 
 class QRViewController: UIViewController {
 
-    let QRArray = ["bottle", "zebronics", "x", "z", "schwags"]
+    let QRArray = ["bottle", "zebronics", "schwags"]
     
     
     @IBOutlet weak var QRImage: UIImageView!
@@ -25,7 +25,7 @@ class QRViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        let x = randomNumber(probabilities: [0.1, 0.1, 0.2, 0.2,0.4])
+        let x = randomNumber(probabilities: [0.2, 0.2,0.6])
         QRImage.image = UIImage(named: QRArray[x])
         
     }

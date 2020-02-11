@@ -20,7 +20,8 @@ class contactViewController: UIViewController, UICollectionViewDataSource, UICol
       
       let imageArray = [#imageLiteral(resourceName: "kartik"), #imageLiteral(resourceName: "mayank"), #imageLiteral(resourceName: "sid"),#imageLiteral(resourceName: "shreyas"), #imageLiteral(resourceName: "nikhil"), #imageLiteral(resourceName: "aditya"), #imageLiteral(resourceName: "harika") ,#imageLiteral(resourceName: "madhur") ,#imageLiteral(resourceName: "arun")]
     
-       
+        let boardContactArray = ["+91-9786411156","+91-9674060769","+91-9600102105","","","","","",""]
+      let boardMailArray = ["","","","","","","","",""]
     
     @IBOutlet weak var websiteButton: UIButton!
     
@@ -42,8 +43,8 @@ class contactViewController: UIViewController, UICollectionViewDataSource, UICol
         cell.boardImage.image = imageArray[indexPath.row]
         cell.boardName.text = boardNameArray[indexPath.row]
         cell.boardPosition.text = boardPositionArray[indexPath.row]
-        
-        
+        cell.boardContact.text = boardContactArray[indexPath.row]
+        cell.boardMail.text = boardMailArray[indexPath.row]
         let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.minimumLineSpacing = 20
         
@@ -98,13 +99,14 @@ class contactViewController: UIViewController, UICollectionViewDataSource, UICol
     
     @IBAction func emailButtonPressed(_ sender: Any) {
         
+    
         let mailComposeViewController = configuredMailComposeViewController()
-               if MFMailComposeViewController.canSendMail(){
-                   self.present(mailComposeViewController, animated: true, completion: nil)
-               }
-               else{
-                   self.showSendMailAlert()
-               }
+                    if MFMailComposeViewController.canSendMail(){
+                        self.present(mailComposeViewController, animated: true, completion: nil)
+                    }
+                    else{
+                        self.showSendMailAlert()
+                    }
         
     }
     
@@ -122,7 +124,12 @@ class contactViewController: UIViewController, UICollectionViewDataSource, UICol
        
        func showSendMailAlert()
        {
-           let sendMailErrorAlert = UIAlertView(title: "Could not Send E-Mail ", message: "Your device must have an active email account. Pls go to the Mail app and log in. (or) Contact us at \"ietevit@vit.ac.in\"", delegate: self, cancelButtonTitle: "OK")
+        
+        let sendMailErrorAlert = UIAlertController(title: "Could not Send E-Mail", message: "Your device must have an active email account. Please go to the Mail app and log in. (or) Contact us at \"ietevit@vit.ac.in\"", preferredStyle: UIAlertController.Style.alert)
+              sendMailErrorAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default))
+             
+              self.present(sendMailErrorAlert, animated: true, completion:nil)
+              
        }
        
        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {

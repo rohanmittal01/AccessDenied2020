@@ -27,19 +27,19 @@ class aboutViewController: UIViewController {
             {
             text1.font = UIFont(name: text1.font!.fontName, size:15)
             text2.font = UIFont(name: text2.font!.fontName, size:15)
-            text3.font = UIFont(name: text3.font!.fontName, size:15)
+            text3.font = UIFont(name: text3.font!.fontName, size:14)
             }
             else if (self.view.frame.width == 375)
             {
                  text1.font = UIFont(name: text1.font!.fontName, size:14)
                  text2.font = UIFont(name: text2.font!.fontName, size:14)
-                 text3.font = UIFont(name: text3.font!.fontName, size:14)
+                 text3.font = UIFont(name: text3.font!.fontName, size:13)
             }
             else if (self.view.frame.width == 320)
             {
                 text1.font = UIFont(name: text1.font!.fontName, size:13)
                 text2.font = UIFont(name: text2.font!.fontName, size:13)
-                text3.font = UIFont(name: text3.font!.fontName, size:13)
+                text3.font = UIFont(name: text3.font!.fontName, size:12)
             }
             // Do any additional setup after loading the view.
         }

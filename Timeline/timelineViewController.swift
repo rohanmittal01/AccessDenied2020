@@ -55,7 +55,7 @@ class timelineViewController: UIViewController, UITableViewDelegate, UITableView
             
             
             
-            if(textField?.text == "xyz"){
+            if(textField?.text == "poseidon"){
                 
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "Prize")
@@ -151,9 +151,21 @@ class timelineViewController: UIViewController, UITableViewDelegate, UITableView
         day1Outlet.setImage(UIImage(named: "day1 highlighted"), for: UIControl.State.normal)
                       
         tableInitiating(day: "day 1")
-        
+         self.Alert(Message: "Please connect to the Internet to observe any updates in the Timeline")
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    func Alert(Message: String)
+          {
+              let alert=UIAlertController(title: "Alert", message: Message, preferredStyle: UIAlertController.Style.alert)
+              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default))
+              self.present(alert, animated: true, completion:nil)
+              
+             
+
+          }
     
 
 
