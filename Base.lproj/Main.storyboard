@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CAg-jK-VMW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CAg-jK-VMW">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -622,7 +622,7 @@
             </objects>
             <point key="canvasLocation" x="-1139" y="488"/>
         </scene>
-        <!--Data Source-->
+        <!--Carousel View Controller-->
         <scene sceneID="foR-xF-hT3">
             <objects>
                 <viewController id="V6v-FD-192" customClass="carouselViewController" customModule="AccessDenied" customModuleProvider="target" sceneMemberID="viewController">
@@ -644,7 +644,8 @@
                                 <rect key="frame" x="60" y="206.5" width="255" height="254"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="t7D-9t-d10" secondAttribute="height" multiplier="250:249" id="mlp-sR-GsQ"/>
+                                    <constraint firstAttribute="height" constant="254" id="IWH-ws-y4n"/>
+                                    <constraint firstAttribute="width" constant="255" id="JUf-8c-8dN"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="V6v-FD-192" id="xKd-oZ-yEd"/>
@@ -658,8 +659,6 @@
                             <constraint firstItem="t7D-9t-d10" firstAttribute="centerX" secondItem="MuM-Iz-28p" secondAttribute="centerX" id="3Rg-lX-FTv"/>
                             <constraint firstItem="t7D-9t-d10" firstAttribute="centerY" secondItem="MuM-Iz-28p" secondAttribute="centerY" id="AW3-FL-UJ6"/>
                             <constraint firstItem="Euz-xC-OyW" firstAttribute="centerX" secondItem="MuM-Iz-28p" secondAttribute="centerX" id="Na3-NW-XVc"/>
-                            <constraint firstItem="Iig-qK-UX6" firstAttribute="trailing" secondItem="t7D-9t-d10" secondAttribute="trailing" constant="60" id="SkL-Cg-3lG"/>
-                            <constraint firstItem="t7D-9t-d10" firstAttribute="leading" secondItem="Iig-qK-UX6" secondAttribute="leading" constant="60" id="kDT-zs-fxf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Iig-qK-UX6"/>
                     </view>
@@ -1182,31 +1181,31 @@
             <point key="canvasLocation" x="1306.4000000000001" y="-1925.4872563718143"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VMf-MH-6KC"/>
+        <segue reference="4yN-7j-JbP"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Hack white logo" width="645" height="808"/>
         <image name="access denied logo" width="170.5" height="170.5"/>
         <image name="agriculture" width="160.5" height="127"/>
-        <image name="briefcase" catalog="system" width="64" height="50"/>
-        <image name="briefcase.fill" catalog="system" width="64" height="50"/>
-        <image name="calendar.circle" catalog="system" width="64" height="60"/>
-        <image name="calendar.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="briefcase" catalog="system" width="128" height="102"/>
+        <image name="briefcase.fill" catalog="system" width="128" height="102"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="calendar.circle.fill" catalog="system" width="128" height="121"/>
         <image name="day1" width="170.5" height="170.5"/>
         <image name="day2" width="170.5" height="170.5"/>
         <image name="day3" width="326.5" height="326.5"/>
-        <image name="desktopcomputer" catalog="system" width="64" height="50"/>
+        <image name="desktopcomputer" catalog="system" width="128" height="101"/>
         <image name="email" width="833" height="833"/>
         <image name="facebook" width="108" height="108"/>
         <image name="ietelogo" width="83.5" height="83.5"/>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
-        <image name="info.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="insta" width="400" height="399.5"/>
         <image name="synergylogoaboutus" width="179" height="53.5"/>
         <image name="vit_logo" width="157.5" height="166.5"/>
         <image name="website" width="286.5" height="300"/>
         <image name="zebronics" width="83" height="83"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="VMf-MH-6KC"/>
-        <segue reference="4yN-7j-JbP"/>
-    </inferredMetricsTieBreakers>
 </document>

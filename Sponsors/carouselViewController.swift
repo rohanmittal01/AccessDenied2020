@@ -81,7 +81,8 @@ class carouselViewController: UIViewController {
               //  titleSponsorFunc()
                 //image Tap Feature
 
-        iCarouselView.type = .coverFlow
+//        iCarouselView.type = .coverFlow
+        iCarouselView.type = .linear
             iCarouselView.contentMode =  .scaleAspectFit
             iCarouselView.isPagingEnabled = true
                 
